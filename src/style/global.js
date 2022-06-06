@@ -23,12 +23,15 @@ export const GlobalStyle = createGlobalStyle`
 
     :root{
         --color-primary-light: #70C871;
-        --color-primary-dark: #252525;
+        --color-dark: #252525;
         
-        --bg-color-dark: #5A966D;
+        --primary-color-dark: #5A966D;
         --green-dark: #108612;
 
         --color-second-light: #EFF0E8;
         --color-light: #F9F9F9;
+
+        --blue-light: #426CFC;
+        --blue-dark: #1134AC; 
     }
 `
