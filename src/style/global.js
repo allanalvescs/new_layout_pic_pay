@@ -33,5 +33,7 @@ export const GlobalStyle = createGlobalStyle`
 
         --blue-light: #426CFC;
         --blue-dark: #1134AC; 
+
+        --font-Inter: 'Inter', sans-serif;
     }
 `

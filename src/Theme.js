@@ -1,6 +1,6 @@
 const lightMode = {
-    backgroundColor: "var(--color-light)",
-    mainColor: "var( --color-primary-light)",
+    backgroundColor: "var(--color-primary-light)",
+    mainColor: "var(--color-light)",
     Color: "var(--color-dark)",
     Button: {
         background: "var(--blue-light)"
@@ -12,7 +12,7 @@ const lightMode = {
 
 const darkMode = {
     backgroundColor: "var(--color-dark)",
-    mainColor: "var(-color-dark)",
+    mainColor: "var(--color-dark)",
     Color: "var(--color-light)",
     Button: {
         background: "var(--blue-dark)"
