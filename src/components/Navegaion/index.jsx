@@ -5,16 +5,22 @@ import {
 } from "react-icons/fa";
 
 import { FiUser, FiSettings } from "react-icons/fi";
+import { useHistory } from "react-router-dom";
 import { useNavegation } from "../../Providers/NavPages";
 
 import { Indicator, NavegationCustomizer } from "./style";
 
 function Navegation() {
   const { page, handleFocus } = useNavegation();
+  const history = useHistory();
+
   return (
     <NavegationCustomizer page={page.page}>
       <ul>
-        <li onClick={() => handleFocus("/setting", -2.1)}>
+        <li onClick={() => {
+          handleFocus("/setting", -2.1)
+          history.push("/settings")
+        }}>
           <span>
             <FiSettings color="var(--color-light)" />
           </span>
@@ -26,7 +32,10 @@ function Navegation() {
           </span>
           <p>Empresa</p>
         </li>
-        <li onClick={() => handleFocus("/client", 0)}>
+        <li onClick={() => {
+          handleFocus("/client", 0)
+          history.push("/client/allan")
+        }}>
           <span>
             <FiUser color="var(--color-light)" />
           </span>

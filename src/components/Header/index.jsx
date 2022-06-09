@@ -6,17 +6,18 @@ import { useTheme } from "../../Providers/Theme";
 import { HeaderCustomizer } from "./style";
 import { Switch } from "@mui/material";
 import { FiLogIn } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 function Header() {
   const { mode, getOppositeMode, setMode } = useTheme();
   return (
     <HeaderCustomizer>
-      <figure>
+      <Link to="/">
         <img
           src={mode === "light" ? PicPayLight : PicPayDark}
           alt="Logo PicPay"
         />
-      </figure>
+      </Link>
       <div>
         <Switch defaultChecked onClick={() => setMode(getOppositeMode())} />
         <button>

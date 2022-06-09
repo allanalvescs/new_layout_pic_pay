@@ -7,7 +7,8 @@ export const HeaderCustomizer = styled.header`
     background-color: ${(props) => props.theme.backgroundColor};
     border-bottom: solid 4px var(--color-primary-light);
     
-    figure{
+    a{
+        display: block;
         width: 150px;   
         img{
             width: 100%;
