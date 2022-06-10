@@ -7,6 +7,7 @@ import { ContainerContent } from "./style/style";
 import Navegation from "./components/Navegaion";
 import RoutePage from "./Routes";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   const { mode } = useTheme()
@@ -18,6 +19,8 @@ function App() {
         <Navegation />
 
         <RoutePage />
+
+        <Footer />
       </ContainerContent>
     </ThemeProvider>
   );
