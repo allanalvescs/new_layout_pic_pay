@@ -53,11 +53,11 @@ export const NavegationCustomizer = styled.nav`
 
         li:nth-child(1){
             span {
-                transform: ${(props) => props.page === "/setting" ? "translateY(-350%)" : "translateY(0)"};
+                transform: ${(props) => props.page === "/dash" ? "translateY(-350%)" : "translateY(0)"};
             }
 
             p{
-                opacity: ${(props) => props.page === "/setting" ? 1 : 0};
+                opacity: ${(props) => props.page === "/dash" ? 1 : 0};
             }
         }
         li:nth-child(2){
@@ -98,7 +98,7 @@ export const NavegationCustomizer = styled.nav`
         }
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 1024px){
         display: none;
     }
 `
@@ -116,7 +116,7 @@ export const Indicator = styled.div`
     box-shadow: 3px 2px 10px var(--color-dark);
     transform: ${(props) => `translateX(calc(100% * ${props.move.position}))`};
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 1024px){
         display: none;
     }
 `

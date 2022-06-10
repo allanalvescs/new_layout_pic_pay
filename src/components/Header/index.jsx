@@ -7,6 +7,7 @@ import { HeaderCustomizer } from "./style";
 import { Switch } from "@mui/material";
 import { FiLogIn } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import Menu from "../MenuDesktop";
 
 function Header() {
   const { mode, getOppositeMode, setMode } = useTheme();
@@ -18,6 +19,7 @@ function Header() {
           alt="Logo PicPay"
         />
       </Link>
+      <Menu />
       <div>
         <Switch defaultChecked onClick={() => setMode(getOppositeMode())} />
         <button>

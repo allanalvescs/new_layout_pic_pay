@@ -4,7 +4,9 @@ import {
   FaRegQuestionCircle,
 } from "react-icons/fa";
 
-import { FiUser, FiSettings } from "react-icons/fi";
+import { FiUser } from "react-icons/fi";
+
+import { RiDashboardFill } from "react-icons/ri";
 import { useHistory } from "react-router-dom";
 import { useNavegation } from "../../Providers/NavPages";
 
@@ -17,14 +19,16 @@ function Navegation() {
   return (
     <NavegationCustomizer page={page.page}>
       <ul>
-        <li onClick={() => {
-          handleFocus("/setting", -2.1)
-          history.push("/settings")
-        }}>
+        <li
+          onClick={() => {
+            handleFocus("/dash", -2.1);
+            history.push("/dash");
+          }}
+        >
           <span>
-            <FiSettings color="var(--color-light)" />
+            <RiDashboardFill color="var(--color-light)" />
           </span>
-          <p>Configurações</p>
+          <p>Dashboard</p>
         </li>
         <li onClick={() => handleFocus("/company", -1.1)}>
           <span>
@@ -32,10 +36,12 @@ function Navegation() {
           </span>
           <p>Empresa</p>
         </li>
-        <li onClick={() => {
-          handleFocus("/client", 0)
-          history.push("/client/allan")
-        }}>
+        <li
+          onClick={() => {
+            handleFocus("/client", 0);
+            history.push("/client/allan");
+          }}
+        >
           <span>
             <FiUser color="var(--color-light)" />
           </span>

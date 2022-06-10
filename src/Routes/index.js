@@ -7,7 +7,7 @@ function RoutePage() {
     return (
         <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route exact path="/settings" component={Settings} />
+            <Route exact path="/dash" component={Settings} />
             <Route exact path="/client/:id" component={Client} />
         </Switch>
     )
