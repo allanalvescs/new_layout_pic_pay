@@ -97,6 +97,10 @@ export const NavegationCustomizer = styled.nav`
             }
         }
     }
+
+    @media screen and (min-width: 768px){
+        display: none;
+    }
 `
 
 export const Indicator = styled.div`
@@ -111,4 +115,8 @@ export const Indicator = styled.div`
     border: solid 5px var(--color-light);
     box-shadow: 3px 2px 10px var(--color-dark);
     transform: ${(props) => `translateX(calc(100% * ${props.move.position}))`};
+
+    @media screen and (min-width: 768px){
+        display: none;
+    }
 `

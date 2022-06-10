@@ -1,12 +1,7 @@
-import whiteCredit from "../../Images/whiteCredit.png";
-
-import blackCredit from "../../Images/darkCredit.png";
-import { useTheme } from "../../Providers/Theme";
+import picPayCard from "../../Images/picpay-card.png";
 import { Container } from "./style";
 
 function OrderCredit() {
-  const { mode } = useTheme();
-
   return (
     <Container>
       <div>
@@ -24,10 +19,7 @@ function OrderCredit() {
       </div>
 
       <figure>
-        <img
-          src={mode === "light" ? blackCredit : whiteCredit}
-          alt="cartão Pic Pay"
-        />
+        <img src={picPayCard} alt="cartão Pic Pay" />
       </figure>
     </Container>
   );
