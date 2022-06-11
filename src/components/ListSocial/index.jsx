@@ -5,9 +5,11 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
+import { Container } from "./style.js";
+
 function ListSocial() {
   return (
-    <ul>
+    <Container>
       <li>
         <FaInstagram color="var(--color-light)" />
       </li>
@@ -20,7 +22,7 @@ function ListSocial() {
       <li>
         <FaTwitter color="var(--color-light)" />
       </li>
-    </ul>
+    </Container>
   );
 }
 

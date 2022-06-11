@@ -1,11 +1,13 @@
+import { Container } from "./style";
+
 function MenuFooter({ name, array }) {
   return (
-    <ul>
+    <Container>
       <h3>{name}</h3>
       {array.map((value, index) => (
         <li key={index}>{value}</li>
       ))}
-    </ul>
+    </Container>
   );
 }
 
