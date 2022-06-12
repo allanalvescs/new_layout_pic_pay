@@ -30,7 +30,12 @@ function Navegation() {
           </span>
           <p>Dashboard</p>
         </li>
-        <li onClick={() => handleFocus("/company", -1.1)}>
+        <li
+          onClick={() => {
+            handleFocus("/company", -1.1);
+            history.push("/company");
+          }}
+        >
           <span>
             <FaRegBuilding color="var(--color-light)" />
           </span>
