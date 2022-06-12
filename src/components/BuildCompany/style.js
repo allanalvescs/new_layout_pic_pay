@@ -23,6 +23,7 @@ export const ConteinerList = styled.div`
     > p{
         font-weight: 600;
         font-family: var(--font-Inter);
+        color: ${(props) => props.theme.Color};
         font-size: 1.2rem;
         width: 260px;
         text-align: center;
@@ -58,10 +59,12 @@ export const ConteinerList = styled.div`
             h3{
                 text-align: center;
                 width: 250px;
+                color: ${(props) => props.theme.Color};
             }
             p{
                 margin-top: 12px;
                 text-align: center;
+                color: ${(props) => props.theme.Color};
             }
         }
     }
