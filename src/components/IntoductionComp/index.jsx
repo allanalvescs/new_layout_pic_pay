@@ -1,6 +1,8 @@
+import { Container } from "./style.js";
+
 function IntroductionCompany() {
   return (
-    <div>
+    <Container>
       <h1>Comece a receber agora com o PicPay Empresas</h1>
       <p>
         Você controla, recebe pagamentos e, se for novo por aqui, tem{" "}
@@ -8,7 +10,7 @@ function IntroductionCompany() {
       </p>
 
       <button>Cadastre-se Agora</button>
-    </div>
+    </Container>
   );
 }
 
