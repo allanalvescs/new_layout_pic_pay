@@ -1,15 +1,16 @@
 import MEI from "../../Images/mei.jpeg";
 import Startup from "../../Images/startup.jpeg";
 import BigCompany from "../../Images/bigcompany.jpeg";
+import { Container, ConteinerList } from "./style";
 
 function BuildCompany() {
   return (
-    <div>
+    <Container>
       <h2>
         A solução para todo tipo de negócio: receber de forma descomplicada
         direto pelo celular
       </h2>
-      <div>
+      <ConteinerList>
         <ul>
           <li>
             <img src={MEI} alt="" />
@@ -32,8 +33,12 @@ function BuildCompany() {
             </p>
           </li>
         </ul>
-      </div>
-    </div>
+
+        <p>Começe a receber agora com PicPay Empresas</p>
+
+        <button>Cadastre-se</button>
+      </ConteinerList>
+    </Container>
   );
 }
 
