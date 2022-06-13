@@ -68,4 +68,24 @@ export const ConteinerList = styled.div`
             }
         }
     }
+
+    @media screen and (min-width: 768px){
+        > p{
+            width: 600px;
+        }
+    }
+
+    @media screen and (min-width: 1024px){
+        ul{
+            width: 1020px;
+            flex-direction: row;
+            justify-content: space-between;
+
+            li{
+                h3{
+                    flex: 1;
+                }
+            }
+        }
+    }
 `

@@ -6,7 +6,9 @@ export const HeaderCustomizer = styled.header`
     padding: 12px;
     background-color: ${(props) => props.theme.backgroundColor};
     border-bottom: solid 4px var(--color-primary-light);
-    
+    position: fixed;
+    top: 0;
+    width: 100%;
     a{
         display: block;
         width: 150px;   
