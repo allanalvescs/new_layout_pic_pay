@@ -6,13 +6,13 @@ function Menu() {
     <Container>
       <ul>
         <li>
-          <Link>Dashboard</Link>
+          <Link to="/dash">Dashboard</Link>
         </li>
         <li>
-          <Link>Empresa</Link>
+          <Link to="/company">Empresa</Link>
         </li>
         <li>
-          <Link>Cliente</Link>
+          <Link to="/client/user">Cliente</Link>
         </li>
         <li>
           <Link>Cartão</Link>
