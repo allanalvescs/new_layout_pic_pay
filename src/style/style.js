@@ -9,3 +9,8 @@ export const ContainerContent = styled.div`
     }
     background-color: ${(props) => props.theme.mainColor};
 `
+
+export const Main = styled.main`
+    position: relative;
+    top: 9.5%;
+`
