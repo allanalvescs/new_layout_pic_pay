@@ -4,9 +4,9 @@ export const FooterCustomizer = styled.footer`
     background-color: var(--color-primary-light);
     display: flex;
     flex-direction: column;
-
     padding: 62px 32px 200px;
     @media screen and (min-width:768px){
+        margin-top: 92px;
         padding: 32px 16px 160px;
     }
 `

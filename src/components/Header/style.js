@@ -9,6 +9,7 @@ export const HeaderCustomizer = styled.header`
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
     a{
         display: block;
         width: 150px;   

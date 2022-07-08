@@ -1,12 +1,13 @@
 import IntroductionHome from "../../components/IntroductionHome";
 import OrderCredit from "../../components/OrderCredit";
+import { Main } from "../../style/style";
 
 function HomePage() {
   return (
-    <main>
+    <Main>
       <IntroductionHome />
       <OrderCredit />
-    </main>
+    </Main>
   );
 }
 
